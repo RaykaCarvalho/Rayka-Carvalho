@@ -1,17 +1,69 @@
-#gameBoard {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    width: 300px;
-    margin: 0 auto;
+body {
+    font-family: 'Didot', sans-serif;
+    background-color: #f0f8ff; /* Azul claro como cor de fundo */
   }
   
-  .cell {
-    width: 100px;
-    height: 100px;
-    border: 2px solid rgb(217, 225, 226);
-    cursor: pointer;
-    font-size: 50px;
+  body {
+    background-image: url('https://media.istockphoto.com/id/1300397135/pt/vetorial/violet-purple-and-navy-blue-defocused-blurred-motion-gradient-abstract-background.jpg?s=612x612&w=0&k=20&c=yLr84o_g5VtSs2oU8YZQ_6GuP9o2qeeyNBHB3Ia6mTg=')
+    background-repeat repeat; /* Opcional */
+    background-size:cover /* Opcional */
+  }
+  
+  .container {
+    position: relative; /* Torna o container um container de posicionamento */
+    height: 100vh; /* Altura da página */
+    margin: 0; /* Remove margens padrão */
+  }
+  
+  
+  img {
+    position: absolute; /* Posicionamento absoluto */
+    top: 20%; /* Posiciona a imagem 20% do topo */
+    left: 50%; /* Posiciona a imagem 50% da esquerda */
+    transform: translate(-50%, -50%); /* Compensa metade do tamanho da imagem */
+    max-width: 100%; /* Largura máxima da imagem */
+    height: auto; /* Mantém proporção da imagem */
+  }
+ 
+ 
+ 
+  body {
+    background-color: #c8a2c8; /* Lilás claro */
+  }
+  
+  /* Selecione elementos específicos para aplicar a cor rosa */
+  h1, h2, h3 {
+    color: #2473b4; /* Razul marinho */
+  }
+  
+  .destaque {
+    background-color: #ffc0cb; /* Rosa médio */
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+
+  header {
+    background-image: url("stitch-header.jpg"); /* Imagem de fundo do Stitch */
+    background-size: cover;
     text-align: center;
-    line-height: 100px;
+    padding: 30px;
+  }
+  
+  h1 {
+    color: #1CE4FF; /* Título em verde */
+    font-size: 4em;
+    text-shadow: 2px 2px 4px #000000; /* Sombra para o título */
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav a {
+    display: inline-block;
+    padding: 10px;
+    color: #070606; /* Links em vermelho */
+    text-decoration: underline;
   }
